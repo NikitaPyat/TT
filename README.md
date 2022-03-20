@@ -2,7 +2,7 @@
 
 ## Project setup
 ```
-npm install vue-cli
+npm install
 ```
 
 ### Compiles and hot-reloads for development
