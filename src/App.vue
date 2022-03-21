@@ -1,11 +1,11 @@
 <template>
-  <add-good/>
+  <add-good v-model:isGoodAdded="isGoodAdded"/>
   <div class="sort">
     <div class="sort-center">
       <div class="sort-center-item">По умолчанию</div>
     </div>
   </div>
-  <goods-board/>
+  <goods-board :isGoodAdded="isGoodAdded"/>
 </template>
 
 <script>
@@ -16,6 +16,11 @@ export default {
   components: {
     addGood,
     goodsBoard
+  },
+  data () {
+    return {
+      isGoodAdded: false
+    }
   }
 }
 </script>
